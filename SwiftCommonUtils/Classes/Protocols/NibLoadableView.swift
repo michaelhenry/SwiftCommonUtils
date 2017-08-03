@@ -8,12 +8,12 @@
 
 import UIKit
 
-protocol NibLoadableView {
+public protocol NibLoadableView {
     static var nib:UINib { get }
 }
 
-extension NibLoadableView where Self: UIView {
-    static var nib: UINib {
+public extension NibLoadableView where Self: UIView {
+    public static var nib: UINib {
         let className = String(describing: self)
         return UINib(nibName: className, bundle: Bundle(for: self))
     }

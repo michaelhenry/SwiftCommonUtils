@@ -8,16 +8,16 @@
 
 import UIKit
 
-extension UICollectionView {
+public extension UICollectionView {
     
-    func registerHeader<T: UICollectionReusableView >(_: T.Type)
+    public func registerHeader<T: UICollectionReusableView >(_: T.Type)
         where T:ReusableView, T:NibLoadableView {
             register(T.nib,
                      forSupplementaryViewOfKind: UICollectionElementKindSectionHeader,
                      withReuseIdentifier: T.reuseIdentifier)
     }
     
-    func register<T: UICollectionViewCell >(_: T.Type)
+    public func register<T: UICollectionViewCell >(_: T.Type)
         where T:ReusableView, T:NibLoadableView {
             register(T.nib, forCellWithReuseIdentifier: T.reuseIdentifier)
     }

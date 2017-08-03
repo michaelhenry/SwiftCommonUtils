@@ -10,7 +10,7 @@ import UIKit
 
 extension UITableView {
 
-    func register<T: UITableViewCell >(_: T.Type)
+    public func register<T: UITableViewCell >(_: T.Type)
         where T:ReusableView, T:NibLoadableView {
             register(T.nib, forCellReuseIdentifier: T.reuseIdentifier)
     }

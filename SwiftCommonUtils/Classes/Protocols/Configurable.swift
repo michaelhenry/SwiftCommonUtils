@@ -10,7 +10,7 @@ import Foundation
 
 public protocol Configurable {}
 
-extension Configurable {
+public extension Configurable {
     public func configure( block: ((inout Self)) -> Void) -> Self {
         var m = self
         block(&m)
