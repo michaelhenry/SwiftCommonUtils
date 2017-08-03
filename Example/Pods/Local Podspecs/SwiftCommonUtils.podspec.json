@@ -1,0 +1,22 @@
+{
+  "name": "SwiftCommonUtils",
+  "version": "0.1.0",
+  "summary": "A short description of SwiftCommonUtils.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Michael Henry Pantaleon/SwiftCommonUtils",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Michael Henry Pantaleon": "me@iamkel.net"
+  },
+  "source": {
+    "git": "https://github.com/Michael Henry Pantaleon/SwiftCommonUtils.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SwiftCommonUtils/Classes/**/*"
+}

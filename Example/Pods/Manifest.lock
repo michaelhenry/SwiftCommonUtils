@@ -1,0 +1,22 @@
+PODS:
+  - Nimble (5.1.1)
+  - Quick (1.0.0)
+  - SwiftCommonUtils (0.1.0)
+
+DEPENDENCIES:
+  - Nimble (~> 5.1.1)
+  - Quick (~> 1.0.0)
+  - SwiftCommonUtils (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftCommonUtils:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
+  Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
+  SwiftCommonUtils: 5b3f7dcc42d14b95305180531ff3addf45705dc4
+
+PODFILE CHECKSUM: 1377d45b7286bfd3e2156baa152d2fd06b35f2d9
+
+COCOAPODS: 1.2.1
