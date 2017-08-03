@@ -1,6 +1,6 @@
 # SwiftCommonUtils
 
-[![CI Status](http://img.shields.io/travis/Michael Henry Pantaleon/SwiftCommonUtils.svg?style=flat)](https://travis-ci.org/Michael Henry Pantaleon/SwiftCommonUtils)
+[![CI Status](http://img.shields.io/travis/michaelhenry/SwiftCommonUtils.svg?style=flat)](https://travis-ci.org/michaelhenry/SwiftCommonUtils)
 [![Version](https://img.shields.io/cocoapods/v/SwiftCommonUtils.svg?style=flat)](http://cocoapods.org/pods/SwiftCommonUtils)
 [![License](https://img.shields.io/cocoapods/l/SwiftCommonUtils.svg?style=flat)](http://cocoapods.org/pods/SwiftCommonUtils)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftCommonUtils.svg?style=flat)](http://cocoapods.org/pods/SwiftCommonUtils)
