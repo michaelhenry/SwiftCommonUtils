@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 Just common utils in swift.
                        DESC
 
-  s.homepage         = 'https://github.com/Michael Henry Pantaleon/SwiftCommonUtils'
+  s.homepage         = 'https://github.com/michaelhenry/SwiftCommonUtils'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Michael Henry Pantaleon' => 'me@iamkel.net' }
