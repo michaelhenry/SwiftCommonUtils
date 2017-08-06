@@ -90,6 +90,8 @@
 		A6CD88A11F338F2300993B5C /* UIResponder+CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CD88A01F338F2300993B5C /* UIResponder+CommonUtils.swift */; };
 		A6CD88A31F338F6200993B5C /* UITableViewCell+CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CD88A21F338F6200993B5C /* UITableViewCell+CommonUtils.swift */; };
 		A6CD88A51F338FB900993B5C /* UITableView+CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CD88A41F338FB900993B5C /* UITableView+CommonUtils.swift */; };
+		A6CD88AA1F33A4EF00993B5C /* RoudedCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CD88A91F33A4EF00993B5C /* RoudedCornerView.swift */; };
+		A6CD88AC1F33A4FE00993B5C /* RoudedCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CD88AB1F33A4FE00993B5C /* RoudedCornerButton.swift */; };
 		A91166D0A5E8F1D5D5377622C381C045 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9A478DF22318E51905AFC8BF831B2D /* Match.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		AB255C27EF10E742C6567775022F49D5 /* BeginWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C53CB242E67876DD3964EC5C775479 /* BeginWith.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		AC0B24EF198E3BEDFCC9F25D7B8EEDAB /* NMBObjCMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEC90FE3EA43490331DC53C67E7DE5B /* NMBObjCMatcher.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -240,6 +242,8 @@
 		A6CD88A01F338F2300993B5C /* UIResponder+CommonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIResponder+CommonUtils.swift"; path = "Extensions/UIResponder+CommonUtils.swift"; sourceTree = "<group>"; };
 		A6CD88A21F338F6200993B5C /* UITableViewCell+CommonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITableViewCell+CommonUtils.swift"; path = "Extensions/UITableViewCell+CommonUtils.swift"; sourceTree = "<group>"; };
 		A6CD88A41F338FB900993B5C /* UITableView+CommonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITableView+CommonUtils.swift"; path = "Extensions/UITableView+CommonUtils.swift"; sourceTree = "<group>"; };
+		A6CD88A91F33A4EF00993B5C /* RoudedCornerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoudedCornerView.swift; path = Views/RoudedCornerView.swift; sourceTree = "<group>"; };
+		A6CD88AB1F33A4FE00993B5C /* RoudedCornerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoudedCornerButton.swift; path = Views/RoudedCornerButton.swift; sourceTree = "<group>"; };
 		A91D06EDAC9BBAD13C3148F1E86A9AD4 /* MatchError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchError.swift; path = Sources/Nimble/Matchers/MatchError.swift; sourceTree = "<group>"; };
 		A9265D9D90339F897C0C6F78088E7BEB /* BeGreaterThanOrEqualTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeGreaterThanOrEqualTo.swift; path = Sources/Nimble/Matchers/BeGreaterThanOrEqualTo.swift; sourceTree = "<group>"; };
 		AAEA58BA3A98ABA9AF85ACD8AE3CED36 /* ExampleGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleGroup.swift; path = Sources/Quick/ExampleGroup.swift; sourceTree = "<group>"; };
@@ -411,6 +415,7 @@
 		6016DC7EFEDA01517EA796AFE077F3EE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A6CD88A81F33A4D500993B5C /* Views */,
 				A6CD88951F338EE100993B5C /* Protocols */,
 				A6CD88941F338EB900993B5C /* Extensions */,
 			);
@@ -574,6 +579,15 @@
 				A6CD88981F338EF200993B5C /* ReusableView.swift */,
 			);
 			name = Protocols;
+			sourceTree = "<group>";
+		};
+		A6CD88A81F33A4D500993B5C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A6CD88A91F33A4EF00993B5C /* RoudedCornerView.swift */,
+				A6CD88AB1F33A4FE00993B5C /* RoudedCornerButton.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		C0C9A9F240BDDD39ED14F00A8ECF770F /* Support Files */ = {
@@ -848,12 +862,14 @@
 				BF3AF1D2B46E09E2B3DCC824E6C1F5AF /* Equal.swift in Sources */,
 				7F6750C7B1847733370B18C4CBFE32DF /* Errors.swift in Sources */,
 				CB7558CCDD935C9E82BBF454022ED1D3 /* Expectation.swift in Sources */,
+				A6CD88AC1F33A4FE00993B5C /* RoudedCornerButton.swift in Sources */,
 				8015239010C1D642F14C105F8FF8E035 /* Expression.swift in Sources */,
 				A6CD889A1F338EF200993B5C /* NibLoadableView.swift in Sources */,
 				7D6269A3CFE53C28DAA6B92E8FC017A7 /* FailureMessage.swift in Sources */,
 				FCFFEB587281358CFF05A65ED9E94C12 /* Functional.swift in Sources */,
 				CE3FA6AE0944D4AE737F0E57CFF4A615 /* HaveCount.swift in Sources */,
 				50B80F12A9BAE302F07F6CF94752F462 /* mach_excServer.c in Sources */,
+				A6CD88AA1F33A4EF00993B5C /* RoudedCornerView.swift in Sources */,
 				A91166D0A5E8F1D5D5377622C381C045 /* Match.swift in Sources */,
 				A6CD88A11F338F2300993B5C /* UIResponder+CommonUtils.swift in Sources */,
 				B9BD565DAB07F8E2288A960A1D3EFAC1 /* MatcherFunc.swift in Sources */,
