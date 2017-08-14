@@ -11,7 +11,7 @@ import MapKit
 
 extension MKMapView {
     
-    func fitAllAnnotations(padding:UIEdgeInsets) {
+    public func fitAllAnnotations(padding:UIEdgeInsets) {
         var zoomRect = MKMapRectNull;
         for annotation in annotations {
             let annotationPoint = MKMapPointForCoordinate(annotation.coordinate)
@@ -21,7 +21,7 @@ extension MKMapView {
         setVisibleMapRect(zoomRect, edgePadding: padding, animated: true)
     }
     
-    func fitAllAnnotations() {
+    public func fitAllAnnotations() {
         fitAllAnnotations(padding: UIEdgeInsetsMake(30, 30, 30, 30))
     }
     
