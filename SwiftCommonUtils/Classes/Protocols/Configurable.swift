@@ -11,7 +11,7 @@ import Foundation
 public protocol Configurable {}
 
 public extension Configurable {
-    public func configure( block: ((inout Self)) -> Void) -> Self {
+    @discardableResult public func configure( block: ((inout Self)) -> Void) -> Self {
         var m = self
         block(&m)
         return m
