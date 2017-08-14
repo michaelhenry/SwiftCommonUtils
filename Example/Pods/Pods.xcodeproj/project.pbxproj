@@ -37,6 +37,9 @@
 		43D454EBB164365CEC928BE17B2198F8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBDD60AB5EC0183A198A13D9A5D7BCE /* XCTest.framework */; };
 		469E9C3ED9FD6009F7C9AAF9E537E212 /* Nimble.h in Headers */ = {isa = PBXBuildFile; fileRef = CE7DD158EC41F47A2796AB19C2CD1AD8 /* Nimble.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4BBD09729FB501E2E159419FA7A8CAA0 /* Pods-SwiftCommonUtils_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3219EF29E1489116B97FB6C05070D8DB /* Pods-SwiftCommonUtils_Tests-dummy.m */; };
+		4CD3CE2D1F41A10C00DCE580 /* UIColor+CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD3CE2C1F41A10C00DCE580 /* UIColor+CommonUtils.swift */; };
+		4CD3CE2F1F41A13B00DCE580 /* Date+CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD3CE2E1F41A13B00DCE580 /* Date+CommonUtils.swift */; };
+		4CD3CE311F41A16000DCE580 /* MKMapView+CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD3CE301F41A16000DCE580 /* MKMapView+CommonUtils.swift */; };
 		4E6B34B1917254A1229418C68BDA6B4E /* ExampleHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD0D67F0098C6695A93CAE9B27528F4 /* ExampleHooks.swift */; };
 		4F3F103945CC52D0A3B8A891BB0E21C4 /* RaisesException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30778608352B15B9CFC7475AD8F932AB /* RaisesException.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		50B80F12A9BAE302F07F6CF94752F462 /* mach_excServer.c in Sources */ = {isa = PBXBuildFile; fileRef = 0BC4F2CA1ACAB7C5DC246E5970464CA7 /* mach_excServer.c */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -192,6 +195,9 @@
 		473162EAADE47F759500100475A4A4BE /* Quick.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Quick.xcconfig; sourceTree = "<group>"; };
 		4B7E39158C032742F5DB8A1F5F944A38 /* Quick-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Quick-prefix.pch"; sourceTree = "<group>"; };
 		4C6329DD1EE75A68AA931A2192C28C69 /* CwlCatchException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CwlCatchException.swift; path = Sources/Lib/CwlPreconditionTesting/CwlCatchException/CwlCatchException/CwlCatchException.swift; sourceTree = "<group>"; };
+		4CD3CE2C1F41A10C00DCE580 /* UIColor+CommonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+CommonUtils.swift"; path = "Extensions/UIColor+CommonUtils.swift"; sourceTree = "<group>"; };
+		4CD3CE2E1F41A13B00DCE580 /* Date+CommonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+CommonUtils.swift"; path = "Extensions/Date+CommonUtils.swift"; sourceTree = "<group>"; };
+		4CD3CE301F41A16000DCE580 /* MKMapView+CommonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "MKMapView+CommonUtils.swift"; path = "Extensions/MKMapView+CommonUtils.swift"; sourceTree = "<group>"; };
 		4CEE6D090220683EB93ACD11A04038DD /* CwlCatchBadInstruction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CwlCatchBadInstruction.m; path = Sources/Lib/CwlPreconditionTesting/CwlPreconditionTesting/CwlCatchBadInstruction.m; sourceTree = "<group>"; };
 		4EE1F2D1C9D5935F6B6B5CC49C89E323 /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = Sources/Nimble/Utils/Errors.swift; sourceTree = "<group>"; };
 		4F0F33EFE650B5CE4774260C8F19455E /* ThrowAssertion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThrowAssertion.swift; path = Sources/Nimble/Matchers/ThrowAssertion.swift; sourceTree = "<group>"; };
@@ -567,6 +573,9 @@
 				A6CD88A01F338F2300993B5C /* UIResponder+CommonUtils.swift */,
 				A6CD88A21F338F6200993B5C /* UITableViewCell+CommonUtils.swift */,
 				A6CD88A41F338FB900993B5C /* UITableView+CommonUtils.swift */,
+				4CD3CE2C1F41A10C00DCE580 /* UIColor+CommonUtils.swift */,
+				4CD3CE2E1F41A13B00DCE580 /* Date+CommonUtils.swift */,
+				4CD3CE301F41A16000DCE580 /* MKMapView+CommonUtils.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -839,6 +848,7 @@
 				A6CD88A31F338F6200993B5C /* UITableViewCell+CommonUtils.swift in Sources */,
 				1C50F54510D5C2B2AD84D7B74A6EDEBB /* BeGreaterThanOrEqualTo.swift in Sources */,
 				A33F1754198E8E8CCC7087F6176FFDC8 /* BeIdenticalTo.swift in Sources */,
+				4CD3CE311F41A16000DCE580 /* MKMapView+CommonUtils.swift in Sources */,
 				A6CD88931F338EB400993B5C /* UICollectionView+CommonUtils.swift in Sources */,
 				6E397D9FB11A47E48D70287D734B12B2 /* BeLessThan.swift in Sources */,
 				A6CD88991F338EF200993B5C /* Configurable.swift in Sources */,
@@ -853,6 +863,7 @@
 				6CDBA48C3A8621E4EE1DAFFE240F0D82 /* CwlCatchBadInstruction.swift in Sources */,
 				947162383483B6391F8CDF38249BFBD2 /* CwlCatchException.m in Sources */,
 				F4A1B7A059AAA6727EB70E58E09332A4 /* CwlCatchException.swift in Sources */,
+				4CD3CE2F1F41A13B00DCE580 /* Date+CommonUtils.swift in Sources */,
 				BB10A2D0B1EE5B1BA811354116F83E3F /* CwlDarwinDefinitions.swift in Sources */,
 				86FFB76B2EDCF4AE79CC4C0BD8A0FE9A /* DSL+Wait.swift in Sources */,
 				1C7CA1FAFBF8B865596C739FEA39CDEE /* DSL.m in Sources */,
@@ -860,6 +871,7 @@
 				A6CD889F1F338EFE00993B5C /* UICollectionReusableView+CommonUtils.swift in Sources */,
 				8654571F855691C23B7B8E61B2141944 /* EndWith.swift in Sources */,
 				BF3AF1D2B46E09E2B3DCC824E6C1F5AF /* Equal.swift in Sources */,
+				4CD3CE2D1F41A10C00DCE580 /* UIColor+CommonUtils.swift in Sources */,
 				7F6750C7B1847733370B18C4CBFE32DF /* Errors.swift in Sources */,
 				CB7558CCDD935C9E82BBF454022ED1D3 /* Expectation.swift in Sources */,
 				A6CD88AC1F33A4FE00993B5C /* RoudedCornerButton.swift in Sources */,
