@@ -84,6 +84,7 @@
 		A0A95E74C4C11FAC564BDB07E2E2398A /* Quick.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C5E4C955DDEF4822A80B37B5651F8ED /* Quick.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A33F1754198E8E8CCC7087F6176FFDC8 /* BeIdenticalTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FFD83D547B8B236BCBB6812BC65762 /* BeIdenticalTo.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		A448F837592E21D9387322E8DA0DD93F /* BeAnInstanceOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C4E97A47F53078887A61504367F9A /* BeAnInstanceOf.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
+		A69D0F171F47DAEF0036F9A1 /* BenchMarking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69D0F161F47DAEF0036F9A1 /* BenchMarking.swift */; };
 		A6CD88931F338EB400993B5C /* UICollectionView+CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CD88921F338EB400993B5C /* UICollectionView+CommonUtils.swift */; };
 		A6CD88991F338EF200993B5C /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CD88961F338EF200993B5C /* Configurable.swift */; };
 		A6CD889A1F338EF200993B5C /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CD88971F338EF200993B5C /* NibLoadableView.swift */; };
@@ -239,6 +240,7 @@
 		A1B6FBF0D92474CEF3368F767565301F /* Pods-SwiftCommonUtils_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftCommonUtils_Tests.modulemap"; sourceTree = "<group>"; };
 		A32B9E8B551B9F568B0B3BBE309347CE /* World+DSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "World+DSL.h"; path = "Sources/QuickObjectiveC/DSL/World+DSL.h"; sourceTree = "<group>"; };
 		A3D11645B35A10BBA558B9BC99C1D340 /* URL+FileName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+FileName.swift"; path = "Sources/Quick/URL+FileName.swift"; sourceTree = "<group>"; };
+		A69D0F161F47DAEF0036F9A1 /* BenchMarking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BenchMarking.swift; path = BenchMarking/BenchMarking.swift; sourceTree = "<group>"; };
 		A6CD88921F338EB400993B5C /* UICollectionView+CommonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UICollectionView+CommonUtils.swift"; path = "Extensions/UICollectionView+CommonUtils.swift"; sourceTree = "<group>"; };
 		A6CD88961F338EF200993B5C /* Configurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Configurable.swift; path = Protocols/Configurable.swift; sourceTree = "<group>"; };
 		A6CD88971F338EF200993B5C /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NibLoadableView.swift; path = Protocols/NibLoadableView.swift; sourceTree = "<group>"; };
@@ -421,6 +423,7 @@
 		6016DC7EFEDA01517EA796AFE077F3EE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A69D0F151F47DAB60036F9A1 /* Benchmarking */,
 				A6CD88A81F33A4D500993B5C /* Views */,
 				A6CD88951F338EE100993B5C /* Protocols */,
 				A6CD88941F338EB900993B5C /* Extensions */,
@@ -562,6 +565,14 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Quick";
+			sourceTree = "<group>";
+		};
+		A69D0F151F47DAB60036F9A1 /* Benchmarking */ = {
+			isa = PBXGroup;
+			children = (
+				A69D0F161F47DAEF0036F9A1 /* BenchMarking.swift */,
+			);
+			name = Benchmarking;
 			sourceTree = "<group>";
 		};
 		A6CD88941F338EB900993B5C /* Extensions */ = {
@@ -894,6 +905,7 @@
 				DC32331BE565888E694E1321BB1D80F5 /* NMBExceptionCapture.m in Sources */,
 				8C30EAD5FFD28B387099B41C74657A67 /* NMBExpectation.swift in Sources */,
 				AC0B24EF198E3BEDFCC9F25D7B8EEDAB /* NMBObjCMatcher.swift in Sources */,
+				A69D0F171F47DAEF0036F9A1 /* BenchMarking.swift in Sources */,
 				127CD37052B8E0BC645D83D4664F59D4 /* NMBStringify.m in Sources */,
 				EBA52C16F42E42A1824D87C284F4A60C /* PostNotification.swift in Sources */,
 				4F3F103945CC52D0A3B8A891BB0E21C4 /* RaisesException.swift in Sources */,
