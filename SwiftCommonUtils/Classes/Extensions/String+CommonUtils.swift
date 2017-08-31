@@ -20,5 +20,16 @@ public extension String {
         return NSLocalizedString(self, tableName: nil, bundle: Bundle.main, value: "", comment: "")
     }
     
+    public func left(_ amount: Int) -> String {
+        let limitCount = min(characters.count, amount)
+        let limitIndex = index(startIndex, offsetBy: limitCount)
+        return substring(to: limitIndex)
+    }
+
+    public func right(_ amount: Int) -> String {
+        let limitCount = min(characters.count, amount)
+        let limitIndex = index(endIndex, offsetBy: -limitCount)
+        return substring(from: limitIndex)
+    }
 }
 
