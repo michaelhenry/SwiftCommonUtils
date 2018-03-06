@@ -8,7 +8,7 @@
 
 import QuartzCore
 
-class BenchMarking {
+public class BenchMarking {
     
     /**
         from https://gist.github.com/kristopherjohnson/4201fbe86473f6edb207

@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Date {
+public extension Date {
     
     public func format(format: String) -> String {
         let formatter = DateFormatter()

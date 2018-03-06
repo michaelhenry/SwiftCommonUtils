@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-extension MKMapView {
+public extension MKMapView {
     
     public func fitAllAnnotations(padding:UIEdgeInsets) {
         var zoomRect = MKMapRectNull;
