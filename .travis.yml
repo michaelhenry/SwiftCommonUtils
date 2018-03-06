@@ -16,5 +16,5 @@ jobs:
         - gem install cocoapods
       script:
         - pod lib lint --allow-warnings
-        - pod trunk push
+        - pod trunk push --allow-warnings
       if: tag IS present
