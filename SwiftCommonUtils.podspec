@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftCommonUtils'
-  s.version          = ENV["SWIFTCOMMONUTILS_VERSION"]
+  s.version          = ENV["SWIFTCOMMONUTILS_VERSION"] || "1.0.0"
   s.summary          = 'A short description of SwiftCommonUtils.'
 
 # This description is used to generate tags and improve search results.
