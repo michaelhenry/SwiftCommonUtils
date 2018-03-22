@@ -8,8 +8,8 @@
 
 import Foundation
 
-extension UIImage{
-  func resizeImage(boundingSize:CGSize) -> UIImage {
+public extension UIImage{
+  public func resizeImage(boundingSize:CGSize) -> UIImage {
     
     let image = self.setImageOrientation()
 
@@ -36,7 +36,7 @@ extension UIImage{
     return image
   }
   
-  func setImageOrientation() -> UIImage {
+  public func setImageOrientation() -> UIImage {
     
     guard imageOrientation != .up else {
       return self
